@@ -132,6 +132,17 @@ button {
   padding-right: 15px;
 }
 
+@keyframes shadowPulse {
+  0% {
+    text-shadow: 0 0 5px rgba(233, 115, 0, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(233, 115, 0, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(233, 115, 0, 0.6);
+  }
+}
 .header {
   margin: 40px 244px;
   display: flex;
@@ -227,4 +238,93 @@ button {
   color: #fff;
   box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
   transition: 0.3s;
+}
+
+.organic {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.organic__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 106%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #1c1b1f;
+  padding-bottom: 40px;
+}
+
+.organic__title--orange {
+  font-weight: 700;
+  color: #ff6f40;
+  display: inline-block;
+  animation: shadowPulse 1.5s infinite alternate;
+}
+
+.organic__info--text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  color: #616161;
+}
+
+.organic__info {
+  margin-bottom: 100px;
+}
+
+.organic__buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.organic__button {
+  border-radius: 8px;
+  padding: 18px 36px;
+  width: 212px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  align-items: center;
+}
+.organic__button .organic__button--span {
+  display: inline-block;
+  transition: 0.3s;
+}
+.organic__button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.organic__button:hover .organic__button--span {
+  transform: scale(1.3);
+}
+
+.organic__button--first {
+  box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+  background-color: #5a9a5b;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+}
+
+.organic__button--second {
+  box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1c1b1f;
 }
