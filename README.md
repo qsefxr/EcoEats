@@ -1,1 +1,1 @@
-# Eco Eats🥗
+# Eco-Eats🥗
