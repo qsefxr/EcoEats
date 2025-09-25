@@ -3,9 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>EcoEats</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/index.scss" />
   </head>
   <body>
+    <header class="header header__container">
+      <h2 class="header__title">
+        <a href="./index.html"
+          ><span class="header__title--text">EcoEats</span></a
+        >
+      </h2>
+      <ul class="header__list">
+        <li class="header__list--item">Home</li>
+        <li class="header__list--item">Our Story</li>
+        <li class="header__list--item">Menu Options</li>
+        <li class="header__list--item">Vegan Dishes</li>
+      </ul>
+      <div class="header__buttons">
+        <button class="header__button header__button--first">
+          <span class="header__button--span">Order</span>
+        </button>
+        <button class="header__button header__button--second">
+          <span class="header__button--span">Join</span>
+        </button>
+      </div>
+    </header>
+    <hr />
+
+    <main class="main"></main>
+    <footer class="footer footer__container"></footer>
     <script type="module" src="./script.js"></script>
   </body>
 </html>

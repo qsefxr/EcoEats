@@ -4,7 +4,6 @@
   },
   "name": "ecoeats",
   "version": "1.0.0",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel ./src/index.html"
@@ -12,5 +11,8 @@
   "keywords": [],
   "author": "Efenzik <artemcherkashin123@gmail.com>",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0"
+  }
 }
