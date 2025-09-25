@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-        <base href="/EcoEats/" />
-
+    <base href="/EcoEats/" />
+    <!-- Без понятия чё это делает ВООБЩЕ -->
+    <!-- ChatGPT написал это : "Тогда все относительные пути будут считаться относительно репозитория" -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EcoEats</title>
@@ -12,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/scss/index.scss" />
   </head>
   <body>
     <header class="header header__container">
@@ -39,7 +40,31 @@
     <hr />
 
     <main class="main">
-      <section class="organic"></section>
+      <section class="organic">
+        <div class="organic__info">
+          <h2 class="organic__title">
+            Savor the <span class="organic__title--orange">Freshness</span
+            ><br />
+            of Organic Goodness
+          </h2>
+          <p class="organic__info--text">
+            We believe that healthy eating should be delicious and satisfying.
+            Join us for a culinary <br />
+            experience that nourishes your body and delights your taste buds.
+          </p>
+        </div>
+        <div class="organic__buttons">
+          <button class="organic__button organic__button--first">
+            <span class="organic__button--span">Menu</span>
+          </button>
+          <button class="organic__button organic__button--second">
+            <span class="organic__button--span">Learn More</span>
+          </button>
+        </div>
+
+        <div class="organic__photos"></div>
+      </section>
+      <hr />
     </main>
     <footer class="footer footer__container"></footer>
     <script type="module" src="./src/script.js"></script>

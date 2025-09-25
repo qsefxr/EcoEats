@@ -1,0 +1,11 @@
+@keyframes shadowPulse {
+  0% {
+    text-shadow: 0 0 5px rgba(233, 115, 0, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(233, 115, 0, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(233, 115, 0, 0.6);
+  }
+}

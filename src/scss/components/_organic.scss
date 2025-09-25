@@ -1,0 +1,84 @@
+.organic {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.organic__title {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 106%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: $text-black;
+  padding-bottom: 40px;
+}
+.organic__title--orange {
+  font-weight: 700;
+  color: $secondary;
+  display: inline-block; // нужно для transform/animation
+
+  animation: shadowPulse 1.5s infinite alternate;
+}
+
+.organic__info--text {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+  color: $text-bright;
+}
+.organic__info {
+  margin-bottom: 100px;
+}
+.organic__buttons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.organic__button {
+  border-radius: 8px;
+  padding: 18px 36px;
+  width: 212px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  align-items: center;
+
+  .organic__button--span {
+    display: inline-block;
+    transition: 0.3s;
+  }
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+    .organic__button--span {
+      transform: scale(1.3);
+    }
+  }
+}
+.organic__button--first {
+  box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+  background-color: $primary;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: $white;
+}
+.organic__button--second {
+  box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: $text-black;
+}
