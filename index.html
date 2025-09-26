@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <base href="/EcoEats/" /> -->
+    <base href="/EcoEats/" />
     <!-- Без понятия чё это делает ВООБЩЕ -->
     <!-- ChatGPT написал это : "Тогда все относительные пути будут считаться относительно репозитория" -->
     <meta charset="UTF-8" />
@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/scss/index.scss" />
+    <link rel="stylesheet" href="./src/css/index.css" />
   </head>
   <body>
     <header class="header header__container">
@@ -141,6 +141,46 @@
         </div>
       </section>
       <hr />
+      <section class="towards">
+        <h2 class="towards__title">
+          At <span class="towards__title--orange"> Eco Eats</span> , we’re proud
+          of our journey towards
+          <br />
+          creating a healthier, more sustainable world.
+        </h2>
+        <ul class="towards__list">
+          <li class="towards__list--item">
+            <h3 class="towards__list--title">100% Organic Certified</h3>
+            <p class="towards__list--subtitle">
+              We’ve achieved full organic certification, ensuring that every
+              ingredient we use is sustainably sourced and chemical-free.
+            </p>
+          </li>
+          <li class="towards__list--item">
+            <h3 class="towards__list--title">5 Tons of Plastic Saved</h3>
+            <p class="towards__list--subtitle">
+              Through our eco-friendly packaging and waste reduction
+              initiatives, we’ve saved over 5 tons of plastic from landfills.
+            </p>
+          </li>
+          <li class="towards__list--item">
+            <h3 class="towards__list--title">20,000+ Happy Customers</h3>
+            <p class="towards__list--subtitle">
+              Thousands of people have embraced a healthier lifestyle with our
+              fresh, organic meals. Join a growing community of health-conscious
+              eaters!d
+            </p>
+          </li>
+          <li class="towards__list--item">
+            <h3 class="towards__list--title">1,000 Meals Donated</h3>
+            <p class="towards__list--subtitle">
+              We believe in giving back. We’ve donated over 1,000 meals to
+              communities in need, ensuring everyone has access to nutritious
+              food.
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="footer footer__container"></footer>
     <script type="module" src="./src/script.js"></script>

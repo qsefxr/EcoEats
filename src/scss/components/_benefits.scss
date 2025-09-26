@@ -1,9 +1,10 @@
 .benefits {
-  margin: 100px 244px;
+  padding: 100px 244px;
   display: flex; /* текст слева, фото справа */
   justify-content: center; /* раздвигаем */
   align-items: flex-start; /* чтобы сверху совпадали */
   gap: 300px;
+  background-color: $organicBg;
 }
 .benefits__texts {
   max-width: 604px;
@@ -65,7 +66,7 @@
 .benefits__photo--star::after {
   content: "";
   position: absolute;
-  right: 250px;
+  right: 150px;
   width: 70px;
   height: 70px;
   background-image: url(../images/benefits/stars.svg);
@@ -79,7 +80,7 @@
   width: 181px;
   height: 270px;
   position: absolute;
-  bottom: -860px;
-  right: 250px;
+  top: 1650px;
+  right: 150px;
   z-index: 2;
 }

@@ -1,0 +1,33 @@
+.towards {
+  padding: 100px 244px;
+}
+.towards__title {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 108%;
+  text-align: center;
+  color: $black;
+  margin-bottom: 60px;
+}
+
+.towards__title--orange {
+  font-weight: 600;
+  color: $secondary;
+  display: inline-block;
+  animation: shadowPulse 1s infinite alternate;
+}
+.towards__list--title {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  color: $black;
+}
+.towards__list--subtitle {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: $text-bright;
+}
