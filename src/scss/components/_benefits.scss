@@ -1,0 +1,85 @@
+.benefits {
+  margin: 100px 244px;
+  display: flex; /* текст слева, фото справа */
+  justify-content: center; /* раздвигаем */
+  align-items: flex-start; /* чтобы сверху совпадали */
+  gap: 300px;
+}
+.benefits__texts {
+  max-width: 604px;
+}
+.benefits__title {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 108%;
+  color: $black;
+  padding-bottom: 40px;
+}
+.benefits__title--orange {
+  font-weight: 600;
+  color: $secondary;
+  display: inline-block;
+  animation: shadowPulse 1s infinite alternate;
+}
+
+.benefits__subtitle {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: $text-bright;
+  padding-bottom: 60px;
+}
+.benefits__extra--title {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 133%;
+  color: $black;
+}
+.benefits__extra--subtitle {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: $text-bright;
+}
+.benefits__info {
+  display: flex;
+  gap: 32px;
+}
+
+.benefits__photo {
+  display: flex;
+  border-radius: 24px;
+}
+.benefits__photo--first {
+  border-radius: 24px;
+  width: 498px;
+  height: 329px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+.benefits__photo--star::after {
+  content: "";
+  position: absolute;
+  right: 250px;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/benefits/stars.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+.benefits__photo--second {
+  border-radius: 24px;
+  width: 181px;
+  height: 270px;
+  position: absolute;
+  bottom: -860px;
+  right: 250px;
+  z-index: 2;
+}
