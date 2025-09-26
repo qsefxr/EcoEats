@@ -593,7 +593,6 @@ button {
 }
 .choose__photo:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 20px 0px rgba(255, 111, 64, 0.7);
   transform: scale(1.05);
   transition: 0.3s;
 }
