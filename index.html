@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/scss/index.scss" />
   </head>
   <body>
     <header class="header header__container">
@@ -244,6 +244,71 @@
         </ul>
       </section>
       <hr />
+      <section class="journey">
+        <div class="journey__info">
+          <h2 class="journey__title">
+            Sustainable Journey <br />
+            from Farm to Table <br />
+            at <span class="journey__title--orange">Eco Eats</span>
+          </h2>
+          <div class="journey__info--notTitle">
+            <p class="journey__subtitle">
+              Our ingredients are sourced from local farms that prioritize
+              <br />
+              sustainable practices, ensuring every meal is not only delicious
+              but
+              <br />
+              also environmentally friendly. From the moment we select our
+              <br />
+              produce to the time we serve your meal, quality is our top
+              priority.
+            </p>
+            <button class="journey__button">
+              <p class="journey__button--text">See All Menu</p>
+            </button>
+          </div>
+        </div>
+        <div class="journey__cards">
+          <ul class="journey__list">
+            <li class="journey__list--item">
+              <img
+                class="journey__item--img"
+                src="./src/images/journey/food-1.jpg"
+                alt="#"
+              />
+              <h3 class="journey__item--title">Power Bowls</h3>
+              <p class="journey__item--text">
+                Loaded with nutrient-packed greens, grains, <br />
+                and proteins.
+              </p>
+            </li>
+            <li class="journey__list--item">
+              <img
+                class="journey__item--img"
+                src="./src/images/journey/food-2.jpg"
+                alt="#"
+              />
+              <h3 class="journey__item--title">Smoothie Bliss</h3>
+              <p class="journey__item--text">
+                Blended to perfection with superfoods and <br />
+                plant-based goodness.
+              </p>
+            </li>
+            <li class="journey__list--item">
+              <img
+                class="journey__item--img"
+                src="./src/images/journey/food-3.jpg"
+                alt="#"
+              />
+              <h3 class="journey__item--title">Organic Wraps & Salads</h3>
+              <p class="journey__item--text">
+                Fresh, light, and satisfying meals to keep <br />
+                you energized all day long.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer footer__container"></footer>
     <script type="module" src="./src/script.js"></script>
