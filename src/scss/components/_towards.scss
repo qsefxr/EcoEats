@@ -31,3 +31,69 @@
   line-height: 133%;
   color: $text-bright;
 }
+.towards__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 48px;
+  column-gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.towards__list--item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.towards__list--title {
+  position: relative; // для ::before
+  padding-left: 90px; // 70px ширина картинки + 20px отступ
+}
+.towards__list--item:nth-child(1) .towards__list--title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/towards/icon-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.towards__list--item:nth-child(2) .towards__list--title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/towards/icon-2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.towards__list--item:nth-child(3) .towards__list--title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/towards/icon-3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.towards__list--item:nth-child(4) .towards__list--title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background-image: url("../images/towards/icon-4.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
