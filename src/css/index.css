@@ -339,9 +339,12 @@ button {
 
 .organic__img {
   border-radius: 48px;
+  transition: 0.3s;
 }
 .organic__img:hover {
   cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .benefits {
