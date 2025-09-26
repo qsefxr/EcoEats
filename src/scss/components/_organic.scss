@@ -19,9 +19,8 @@
 .organic__title--orange {
   font-weight: 700;
   color: $secondary;
-  display: inline-block; // нужно для transform/animation
-
-  animation: shadowPulse 1.5s infinite alternate;
+  display: inline-block;
+  animation: shadowPulse 1s infinite alternate;
 }
 
 .organic__info--text {
@@ -41,6 +40,7 @@
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 100px;
 }
 .organic__button {
   border-radius: 8px;
@@ -81,4 +81,14 @@
   font-size: 16px;
   line-height: 150%;
   color: $text-black;
+}
+.organic__photos {
+  display: flex;
+  gap: 20px;
+}
+.organic__img {
+  border-radius: 48px;
+  &:hover {
+    cursor: pointer;
+  }
 }
