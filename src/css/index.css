@@ -761,3 +761,162 @@ button {
   line-height: 1.5;
   color: #fff;
 }
+
+.bowls {
+  padding: 100px 244px;
+}
+
+.bowls__list {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.bowls__main--info {
+  display: flex;
+  gap: 107px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.bowls__info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 206px;
+}
+
+.bowls__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 108%;
+  color: #000;
+  width: 391px;
+  height: 53px;
+}
+
+.bowls__title--vector {
+  display: inline-block;
+}
+
+.bowls__title--vector::after {
+  content: "";
+  display: block;
+  width: 98px;
+  height: 14px;
+  background-image: url(../images/vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bowls__subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: #616161;
+}
+
+.bowls__button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5a9a5b;
+  position: relative;
+  display: inline-flex;
+  background-color: inherit;
+}
+.bowls__button::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  background-image: url("../images/arrow-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bowls__cards {
+  position: relative;
+}
+
+.bowls__button--gap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.bowls__list--item {
+  border: 1px solid #bdbdbd;
+  border-radius: 24px;
+  max-width: 286px;
+  background: #fff;
+}
+
+.bowls__list--img {
+  width: 286px;
+  height: 178px;
+  border-radius: 24px 24px 0px 0px;
+}
+
+.bowls__list--title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: #000;
+  height: 64px;
+}
+
+.bowls__price--info {
+  display: flex;
+}
+
+.bowls__list--subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+}
+
+.bowls__list--price {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0em;
+  color: #000;
+  margin-right: 18px;
+}
+
+.bowls__list--order {
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 147px;
+  height: 40px;
+  box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+  background: #ff6f40;
+}
+
+.bowls__order--text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0em;
+  color: #fff;
+}
+
+.bowls {
+  padding-bottom: 100px;
+  padding-left: 244px;
+  padding-right: 244px;
+}
