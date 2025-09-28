@@ -764,6 +764,7 @@ button {
 
 .bowls {
   padding: 100px 244px;
+  background-color: #f6f9f6;
 }
 
 .bowls__list {
@@ -830,6 +831,9 @@ button {
   position: relative;
   display: inline-flex;
   background-color: inherit;
+}
+.bowls__button:hover {
+  cursor: pointer;
 }
 .bowls__button::after {
   content: "";
@@ -904,6 +908,15 @@ button {
   height: 40px;
   box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
   background: #ff6f40;
+  transition: 0.3s;
+}
+.bowls__list--order:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.bowls__list--order:hover .bowls__order--text {
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 .bowls__order--text {
@@ -913,10 +926,343 @@ button {
   line-height: 143%;
   letter-spacing: 0em;
   color: #fff;
+  transition: 0.3s;
 }
 
-.bowls {
-  padding-bottom: 100px;
+.bliss {
   padding-left: 244px;
   padding-right: 244px;
+  padding-bottom: 100px;
+  background-color: #f6f9f6;
+}
+
+.bliss__list {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.bliss__main--info {
+  display: flex;
+  gap: 107px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.bliss__info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 206px;
+}
+
+.bliss__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 108%;
+  color: #000;
+  width: 391px;
+  height: 53px;
+}
+
+.bliss__title--vector {
+  display: inline-block;
+}
+
+.bliss__title--vector::after {
+  content: "";
+  display: block;
+  width: 98px;
+  height: 14px;
+  background-image: url(../images/vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bliss__subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: #616161;
+}
+
+.bliss__button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5a9a5b;
+  position: relative;
+  display: inline-flex;
+  background-color: inherit;
+}
+.bliss__button:hover {
+  cursor: pointer;
+}
+.bliss__button::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  background-image: url("../images/arrow-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bliss__cards {
+  position: relative;
+}
+
+.bliss__button--gap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.bliss__list--item {
+  border: 1px solid #bdbdbd;
+  border-radius: 24px;
+  max-width: 286px;
+  background: #fff;
+}
+
+.bliss__list--img {
+  width: 286px;
+  height: 178px;
+  border-radius: 24px 24px 0px 0px;
+}
+
+.bliss__list--title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: #000;
+  height: 64px;
+}
+
+.bliss__price--info {
+  display: flex;
+}
+
+.bliss__list--subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+}
+
+.bliss__list--price {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0em;
+  color: #000;
+  margin-right: 18px;
+}
+
+.bliss__list--order {
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 147px;
+  height: 40px;
+  box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+  background: #ff6f40;
+  transition: 0.3s;
+}
+.bliss__list--order:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.bliss__list--order:hover .bliss__order--text {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.bliss__order--text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0em;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.salads {
+  padding-left: 244px;
+  padding-right: 244px;
+  padding-bottom: 100px;
+  background-color: #f6f9f6;
+}
+
+.salads__list {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.salads__main--info {
+  display: flex;
+  gap: 107px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.salads__info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 206px;
+}
+
+.salads__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 108%;
+  color: #000;
+  width: 391px;
+  height: 53px;
+}
+
+.salads__title--vector {
+  display: inline-block;
+}
+
+.salads__title--vector::after {
+  content: "";
+  display: block;
+  width: 98px;
+  height: 14px;
+  background-image: url(../images/vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.salads__subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: #616161;
+}
+
+.salads__button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5a9a5b;
+  position: relative;
+  display: inline-flex;
+  background-color: inherit;
+}
+.salads__button:hover {
+  cursor: pointer;
+}
+.salads__button::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  background-image: url("../images/arrow-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.salads__cards {
+  position: relative;
+}
+
+.salads__button--gap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.salads__list--item {
+  border: 1px solid #bdbdbd;
+  border-radius: 24px;
+  max-width: 286px;
+  background: #fff;
+}
+
+.salads__list--img {
+  width: 286px;
+  height: 178px;
+  border-radius: 24px 24px 0px 0px;
+}
+
+.salads__list--title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: #000;
+  height: 64px;
+}
+
+.salads__price--info {
+  display: flex;
+}
+
+.salads__list--subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+}
+
+.salads__list--price {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0em;
+  color: #000;
+  margin-right: 18px;
+}
+
+.salads__list--order {
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 147px;
+  height: 40px;
+  box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+  background: #ff6f40;
+  transition: 0.3s;
+}
+.salads__list--order:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.salads__list--order:hover .salads__order--text {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.salads__order--text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0em;
+  color: #fff;
+  transition: 0.3s;
 }

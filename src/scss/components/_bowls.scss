@@ -1,5 +1,6 @@
 .bowls {
   padding: 100px 244px;
+  background-color: $bgOne;
 }
 .bowls__list {
   display: flex;
@@ -62,6 +63,9 @@
   position: relative;
   display: inline-flex;
   background-color: inherit;
+  &:hover {
+    cursor: pointer;
+  }
   &::after {
     content: "";
     display: block;
@@ -129,6 +133,15 @@
   height: 40px;
   box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
   background: $secondary;
+  transition: 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    .bowls__order--text {
+      transform: scale(1.2);
+      transition: 0.3s;
+    }
+  }
 }
 .bowls__order--text {
   font-family: $font-family;
@@ -137,4 +150,5 @@
   line-height: 143%;
   letter-spacing: 0em;
   color: $white;
+  transition: 0.3s;
 }
