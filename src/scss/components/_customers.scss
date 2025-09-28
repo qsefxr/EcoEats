@@ -1,0 +1,77 @@
+.customers {
+  padding: 100px 244px;
+}
+
+.customers__title {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 108%;
+  color: $black;
+}
+.customers__photo {
+  border-radius: 24px;
+  width: 498px;
+  height: 331px;
+}
+.customers__info {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0em;
+  color: $black;
+}
+.customers__author {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: $text-bright;
+}
+.customers__high {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customers__buttons {
+  display: flex;
+  gap: 12px;
+}
+.customers__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; // круглая форма
+
+  border: 3px solid $outline;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/button-right.svg");
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: $outline;
+  }
+
+  &--right::before {
+    transform: scaleX(-1);
+    background-image: url("../images/button-right.svg");
+  }
+  &:hover {
+    border-color: transparent;
+    background-color: $primary;
+
+    &::before {
+      filter: brightness(2);
+    }
+  }
+}

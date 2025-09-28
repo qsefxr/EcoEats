@@ -1266,3 +1266,83 @@ button {
   color: #fff;
   transition: 0.3s;
 }
+
+.customers {
+  padding: 100px 244px;
+}
+
+.customers__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 108%;
+  color: #000;
+}
+
+.customers__photo {
+  border-radius: 24px;
+  width: 498px;
+  height: 331px;
+}
+
+.customers__info {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.customers__author {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #616161;
+}
+
+.customers__high {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customers__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.customers__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #bdbdbd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.customers__button::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/button-right.svg");
+  transition: 0.3s;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: #bdbdbd;
+}
+.customers__button--right::before {
+  transform: scaleX(-1);
+  background-image: url("../images/button-right.svg");
+}
+.customers__button:hover {
+  border-color: transparent;
+  background-color: #5a9a5b;
+}
+.customers__button:hover::before {
+  filter: brightness(2);
+}
