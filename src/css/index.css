@@ -219,7 +219,7 @@ button {
 }
 .header__button:hover .header__button--span {
   transition: 0.3s;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .header__buttons {
@@ -310,7 +310,7 @@ button {
   cursor: pointer;
 }
 .organic__button:hover .organic__button--span {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .organic__button--first {
