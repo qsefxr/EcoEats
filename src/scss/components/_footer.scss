@@ -61,6 +61,12 @@
   font-size: 18px;
   line-height: 133%;
   color: $white;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: $secondary;
+    transition: 0.3s;
+  }
 }
 
 .footer__list--right {

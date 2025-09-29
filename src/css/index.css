@@ -186,11 +186,18 @@ body {
   gap: 40px;
   margin-right: 40px;
 }
+
 .header__list--item {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
   color: #616161;
+  transition: 0.3s;
+}
+.header__list--item:hover {
+  cursor: pointer;
+  color: #ff6f40;
+  transition: 0.3s;
 }
 
 .header__buttons {
@@ -1556,6 +1563,12 @@ body {
   font-size: 18px;
   line-height: 133%;
   color: #fff;
+  transition: 0.3s;
+}
+.footer__list--item:hover {
+  cursor: pointer;
+  color: #ff6f40;
+  transition: 0.3s;
 }
 
 .footer__list--right {
@@ -1591,4 +1604,32 @@ body {
 .footer__links--item a svg:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #5a9a5b;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+.scroll-top-btn:hover {
+  transform: scale(1.1);
+}
+.scroll-top-btn.active {
+  opacity: 1;
+  pointer-events: auto;
 }

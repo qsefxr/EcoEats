@@ -39,12 +39,17 @@
   display: flex;
   gap: 40px;
   margin-right: 40px;
-
-  &--item {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 150%;
-    color: $text-bright;
+}
+.header__list--item {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: $text-bright;
+  transition: 0.3s;
+  &:hover {
+    cursor: pointer;
+    color: $secondary;
+    transition: 0.3s;
   }
 }
 
