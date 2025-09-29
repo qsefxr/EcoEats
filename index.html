@@ -661,6 +661,123 @@
         </div>
       </section>
       <hr />
+      <section class="reserve">
+        <div class="reserve__high">
+          <h2 class="reserve__title">Reserve a Table</h2>
+          <p class="reserve__subtitle">
+            Book your table at Eco Eats and indulge in our wholesome, <br />
+            nutritious dishes. Whether it's a cozy lunch or a special dinner,
+            <br />
+            we're ready to serve you!
+          </p>
+        </div>
+        <div class="reserve__bot">
+          <div class="reserve__left">
+            <img
+              src="./src/images/adress-reserve.jpg"
+              alt=""
+              class="reserve__photo"
+            />
+            <ul class="reserve__list">
+              <li class="reserve__list--item reserve__list--first">
+                <h3 class="reserve__list--title">Eco Eats NYC</h3>
+                <p class="reserve__list--info">
+                  123 Greenway Avenue <br />
+                  New York, NY 10001 <br />
+                  (212) 555-1234
+                </p>
+              </li>
+              <li class="reserve__list--item reserve__list--second">
+                <h3 class="reserve__list--title">Hours of Operation</h3>
+                <p class="reserve__list--info">
+                  Monday - Friday: 8 AM - 8 PM <br />
+                  Saturday: 9 AM - 9 PM <br />
+                  Sunday: 9 AM - 6 PM
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="reserve__right">
+            <form class="booking__form">
+              <div class="booking__field">
+                <input
+                  placeholder="Name"
+                  type="text"
+                  class="reserve__input"
+                  name="name"
+                  maxlength="18"
+                  required
+                />
+              </div>
+
+              <div class="booking__field">
+                <input
+                  placeholder="Email address"
+                  type="email"
+                  class="reserve__input reserve__input--gmail"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="booking__field">
+                <input
+                  placeholder="Phone Number"
+                  type="tel"
+                  class="reserve__input"
+                  name="phone"
+                  required
+                />
+              </div>
+
+              <div class="booking__field">
+                <input
+                  placeholder="Date"
+                  type="date"
+                  class="reserve__input"
+                  name="date"
+                  required
+                />
+              </div>
+
+              <div class="booking__field">
+                <input
+                  placeholder="Time"
+                  type="time"
+                  class="reserve__input"
+                  name="time"
+                  required
+                />
+              </div>
+
+              <div class="booking__field">
+                <input
+                  placeholder="Number of Guests"
+                  type="number"
+                  class="reserve__input"
+                  name="participants"
+                  required
+                />
+              </div>
+
+              <div class="booking__field booking__field--full">
+                <input
+                  type="text"
+                  placeholder="Special Requests"
+                  class="reserve__input--special"
+                  name="message"
+                  maxlength="75"
+                  placeholder="Write your message..."
+                />
+              </div>
+
+              <button type="submit" class="reserve__button">
+                <p class="reserve__button--text">Reserve Now</p>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer footer__container"></footer>
     <script type="module" src="./src/script.js"></script>

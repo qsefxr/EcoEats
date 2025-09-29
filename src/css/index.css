@@ -1367,3 +1367,163 @@ button {
   display: flex;
   justify-content: space-between;
 }
+
+.reserve {
+  padding: 100px 244px;
+}
+
+.reserve__high {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.reserve__title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 108%;
+  color: #000;
+}
+
+.reserve__bot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reserve__list {
+  width: 604px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reserve__list--first {
+  position: relative;
+  margin-left: 75px;
+}
+
+.reserve__list--first::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: -65px;
+  left: -65px;
+  background-image: url("../images/pin.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reserve__list--second {
+  margin-right: 30px;
+}
+
+.reserve__subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: #616161;
+}
+
+.reserve__photo {
+  border-radius: 24px;
+  width: 604px;
+  height: 304px;
+  margin-bottom: 80px;
+}
+
+.reserve__list--title {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: #000;
+}
+
+.reserve__list--info {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #616161;
+}
+
+.reserve__button--text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.reserve__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 18px 36px;
+  width: 530px;
+  height: 56px;
+  box-shadow: 0 2px 4px -1px rgba(33, 150, 243, 0.2);
+  background: #5a9a5b;
+  transition: 0.3s;
+  margin-top: 4px;
+}
+.reserve__button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.reserve__button:hover .reserve__button--text {
+  transform: scale(1.2);
+}
+
+.reserve__left {
+  display: flex;
+  width: 604px;
+  height: 508px;
+  flex-direction: column;
+}
+
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.booking__field {
+  border: 1px solid rgba(17, 17, 19, 0.2);
+  border-radius: 4px;
+  padding: 13px 16px;
+  width: 530px;
+  height: 48px;
+}
+
+.booking__field input::-moz-placeholder, .booking__field textarea::-moz-placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(17, 17, 19, 0.6);
+}
+
+.booking__field input::placeholder,
+.booking__field textarea::placeholder {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(17, 17, 19, 0.6);
+}
+
+.reserve__input--special {
+  width: 510px;
+}
+
+.reserve__input--gmail {
+  width: 510px;
+}
