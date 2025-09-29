@@ -6,7 +6,6 @@ This is a static visual mockup of the **EcoEats** website. Some links and intera
 💾 **Commits:** All made by the author, though pushed from a secondary account  
 
 ## 📝 Features / Highlights  
-- Responsive, mobile-friendly layout (planned & in progress)  
 - Clean project structure following **BEM methodology**  
 - Modern CSS animations & hover effects for interactive feel  
 - Organized SCSS with clear component separation   
