@@ -1,4 +1,4 @@
-# EcoEats Website (Visual Mockup) 🌿
+# EcoEats Website (Visual Layout) 🌿
 
 This is a static visual mockup of the **EcoEats** website. Some links and interactive elements are non-functional - the focus is on **layout, styling**.  
 
