@@ -1,4 +1,7 @@
-import { initAOS } from "../src/js/aos.js";
+AOS.init({
+  duration: 1000,
+  once: true,
+});
 
 import { initScrollButton } from "../src/js/scroll.js";
 document.addEventListener("DOMContentLoaded", () => {
