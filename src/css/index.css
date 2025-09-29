@@ -1287,11 +1287,26 @@ button {
 
 .customers__info {
   font-family: "Quicksand", sans-serif;
+  position: relative;
   font-weight: 500;
   font-size: 30px;
   line-height: 120%;
   letter-spacing: 0em;
   color: #000;
+  margin-top: 76.5px;
+  margin-bottom: 40px;
+}
+.customers__info::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  top: -74px;
+  left: -74px;
+  background-image: url("../images/quotes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .customers__author {
@@ -1304,6 +1319,7 @@ button {
 
 .customers__high {
   display: flex;
+  margin-bottom: 40px;
   justify-content: space-between;
   align-items: center;
 }
@@ -1345,4 +1361,9 @@ button {
 }
 .customers__button:hover::before {
   filter: brightness(2);
+}
+
+.customers__bot {
+  display: flex;
+  justify-content: space-between;
 }
