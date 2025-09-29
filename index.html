@@ -13,6 +13,7 @@
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/modal.css" />
   </head>
   <body>
     <header class="header header__container">
@@ -23,9 +24,9 @@
       </h2>
       <ul data-aos="fade-down" class="header__list">
         <li class="header__list--item">Home</li>
-        <li class="header__list--item">Our Story</li>
-        <li class="header__list--item">Menu Options</li>
-        <li class="header__list--item">Vegan Dishes</li>
+        <li class="header__list--item header__list--story">Our Story</li>
+        <li class="header__list--item header__list--menu">Menu Options</li>
+        <li class="header__list--item header__list--vegan">Vegan Dishes</li>
       </ul>
       <div data-aos="fade-right" class="header__buttons">
         <button class="header__button header__button--first">
@@ -137,7 +138,7 @@
           </div>
         </div>
       </section>
-      <section class="towards">
+      <section id="story" class="towards">
         <h2 data-aos="fade-down" class="towards__title">
           At <span class="towards__title--orange"> Eco Eats</span> , we’re proud
           of our journey towards
@@ -238,7 +239,7 @@
           </li>
         </ul>
       </section>
-      <section class="journey">
+      <section id="menu" class="journey">
         <div class="journey__info">
           <h2 data-aos="fade-right" class="journey__title">
             Sustainable Journey <br />
@@ -303,7 +304,7 @@
           </ul>
         </div>
       </section>
-      <section class="dishes">
+      <section id="dishes" class="dishes">
         <div class="bowls">
           <div class="bowls__main--info">
             <h2 data-aos="fade-right" class="bowls__title">
@@ -794,7 +795,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer footer__container">
       <div class="footer__left">
         <h2 data-aos="fade-right" class="footer__title">
@@ -851,6 +851,32 @@
         </div>
       </div>
     </footer>
+    <div id="joinModal" class="modal">
+      <div class="modal__content" data-aos="zoom-in">
+        <span class="modal__close">&times;</span>
+        <h2 class="modal__title">Join Eco Eats</h2>
+        <p class="modal__subtitle">
+          Subscribe to our newsletter and stay updated with our latest meals and
+          offers!
+        </p>
+        <form class="modal__form">
+          <input
+            type="text"
+            placeholder="Your Name"
+            required
+            class="modal__input"
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            required
+            class="modal__input"
+          />
+          <button type="submit" class="modal__button">Join Now</button>
+        </form>
+      </div>
+    </div>
+
     <button id="scrollTopBtn" class="scroll-top-btn">scrl</button>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script type="module" src="./src/script.js"></script>
