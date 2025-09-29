@@ -1,8 +1,8 @@
 .benefits {
   padding: 100px 244px;
-  display: flex; /* текст слева, фото справа */
-  justify-content: center; /* раздвигаем */
-  align-items: flex-start; /* чтобы сверху совпадали */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   gap: 300px;
   background-color: $bgOne;
 }

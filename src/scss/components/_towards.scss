@@ -47,8 +47,8 @@
   gap: 24px;
 }
 .towards__list--title {
-  position: relative; // для ::before
-  padding-left: 90px; // 70px ширина картинки + 20px отступ
+  position: relative;
+  padding-left: 90px;
 }
 .towards__list--item:nth-child(1) .towards__list--title::before {
   content: "";
