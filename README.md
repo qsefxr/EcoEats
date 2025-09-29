@@ -1,6 +1,6 @@
 # EcoEats Website (Visual Mockup) 🌿
 
-This is a **static visual mockup** of the **EcoEats** website. Some links and interactive elements are non-functional — the focus is on **layout, styling, and responsive design**.  
+This is a static visual mockup of the **EcoEats** website. Some links and interactive elements are non-functional - the focus is on **layout, styling**.  
 
 ⏱ **Development time:** ~4 days  
 💾 **Commits:** All made by the author, though pushed from a secondary account  
