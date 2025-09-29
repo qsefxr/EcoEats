@@ -16,8 +16,3 @@ initScrollToMenu();
 
 import { initScrollToReserve } from "./js/scrollToSection.js";
 initScrollToReserve();
-
-import { initJoinModal } from "./js/modal.js";
-document.addEventListener("DOMContentLoaded", () => {
-  initJoinModal();
-});
