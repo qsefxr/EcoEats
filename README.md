@@ -13,7 +13,7 @@ Technologies used:
 This project demonstrates **frontend skills** and provides a **visual reference** for designers and developers to explore modern layout techniques.  
 
 📂 **Authors:**  
-- [Primary account](https://github.com/qsefxr) – main repository owner  
-- [Secondary account](https://github.com/Efenzik) – used for commits  
+- [qsefxr](https://github.com/qsefxr) – main repository owner  
+- [Efenzik](https://github.com/Efenzik) – used for commits  
 
 Feel free to browse the code to see how components are structured, styles are applied, and visual hierarchy is maintained. 🚀
