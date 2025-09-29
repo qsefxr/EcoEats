@@ -17,3 +17,5 @@ This project demonstrates **frontend skills** and provides a **visual reference*
 - [Efenzik](https://github.com/Efenzik) – used for commits  
 
 Feel free to browse the code to see how components are structured, styles are applied, and visual hierarchy is maintained. 🚀
+
+![My GIF](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmNwODdpc2ltbjF3eWNyOHV2Zjh2cW9xbGpnYWo2YXE0MHF2OHZtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jIqh3ym2s7GU/giphy.gif)
