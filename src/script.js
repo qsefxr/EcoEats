@@ -1,5 +1,5 @@
 import { initAOS } from "../src/js/aos.js";
-import "./scss/components/modal.scss";
+
 import { initScrollButton } from "../src/js/scroll.js";
 document.addEventListener("DOMContentLoaded", () => {
   initScrollButton();
