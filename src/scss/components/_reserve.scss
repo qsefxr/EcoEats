@@ -11,7 +11,6 @@
 }
 
 .reserve__title {
-  font-family: $font-family;
   font-weight: 500;
   font-size: 48px;
   line-height: 108%;
@@ -19,7 +18,6 @@
 }
 
 .reserve__subtitle {
-  font-family: $font-family;
   font-weight: 600;
   font-size: 18px;
   line-height: 133%;
@@ -78,7 +76,6 @@
 }
 
 .reserve__list--title {
-  font-family: $font-family;
   font-weight: 600;
   font-size: 24px;
   line-height: 133%;
@@ -86,7 +83,6 @@
 }
 
 .reserve__list--info {
-  font-family: $font-family;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -113,7 +109,6 @@
 
 .booking__field input::placeholder,
 .booking__field textarea::placeholder {
-  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -158,7 +153,6 @@
 }
 
 .reserve__button--text {
-  font-family: $font-family;
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
