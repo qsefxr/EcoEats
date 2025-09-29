@@ -1,5 +1,6 @@
 .reserve {
   padding: 100px 244px;
+  background-color: $bgOne;
 }
 .reserve__high {
   height: 72px;
@@ -23,6 +24,10 @@
   display: flex;
   justify-content: space-between;
 }
+.reserve__input {
+  background-color: $bgOne;
+}
+
 .reserve__list--first {
   position: relative;
   margin-left: 75px;
@@ -128,6 +133,7 @@
 }
 .reserve__input--special {
   width: 510px;
+  background-color: $bgOne;
 }
 .reserve__input--gmail {
   width: 510px;
