@@ -1,1 +1,4 @@
-console.log("123");
+AOS.init({
+  duration: 1000,
+  once: true,
+});
