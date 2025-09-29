@@ -2,6 +2,13 @@
   padding: 100px 244px;
 }
 
+.customers__high {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .customers__title {
   font-family: $font-family;
   font-weight: 500;
@@ -9,11 +16,65 @@
   line-height: 108%;
   color: $black;
 }
+
+.customers__buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.customers__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid $outline;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.customers__button::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/button-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: $outline;
+  transition: 0.3s;
+}
+
+.customers__button--right::before {
+  transform: scaleX(-1);
+  background-image: url("../images/button-right.svg");
+}
+
+.customers__button:hover {
+  border-color: transparent;
+  background-color: $primary;
+}
+
+.customers__button:hover::before {
+  filter: brightness(2);
+}
+
+.customers__bot {
+  display: flex;
+  justify-content: space-between;
+}
+
 .customers__photo {
   border-radius: 24px;
   width: 498px;
   height: 331px;
 }
+
+.customers__info--all {
+  display: block;
+}
+
 .customers__info {
   font-family: $font-family;
   position: relative;
@@ -24,74 +85,25 @@
   color: $black;
   margin-top: 76.5px;
   margin-bottom: 40px;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 74px;
-    height: 74px;
-    top: -74px;
-    left: -74px;
-    background-image: url("../images/quotes.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 }
+
+.customers__info::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  top: -74px;
+  left: -74px;
+  background-image: url("../images/quotes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .customers__author {
   font-family: $font-family;
   font-weight: 500;
   font-size: 24px;
   line-height: 133%;
   color: $text-bright;
-}
-.customers__high {
-  display: flex;
-  margin-bottom: 40px;
-  justify-content: space-between;
-  align-items: center;
-}
-.customers__buttons {
-  display: flex;
-  gap: 12px;
-}
-.customers__button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%; // круглая форма
-
-  border: 3px solid $outline;
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  &::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/button-right.svg");
-    transition: 0.3s;
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: $outline;
-  }
-
-  &--right::before {
-    transform: scaleX(-1);
-    background-image: url("../images/button-right.svg");
-  }
-  &:hover {
-    border-color: transparent;
-    background-color: $primary;
-
-    &::before {
-      filter: brightness(2);
-    }
-  }
-}
-.customers__bot {
-  display: flex;
-  justify-content: space-between;
 }

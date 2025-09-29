@@ -1,6 +1,7 @@
 .towards {
   padding: 100px 244px;
 }
+
 .towards__title {
   font-family: $font-family;
   font-weight: 500;
@@ -17,20 +18,7 @@
   display: inline-block;
   animation: shadowPulse 1s infinite alternate;
 }
-.towards__list--title {
-  font-family: $font-family;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 120%;
-  color: $black;
-}
-.towards__list--subtitle {
-  font-family: $font-family;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 133%;
-  color: $text-bright;
-}
+
 .towards__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -46,46 +34,28 @@
   flex-direction: column;
   gap: 24px;
 }
+
 .towards__list--title {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  color: $black;
   position: relative;
   padding-left: 90px;
 }
-.towards__list--item:nth-child(1) .towards__list--title::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 70px;
-  height: 70px;
-  background-image: url("../images/towards/icon-1.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+
+.towards__list--subtitle {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: $text-bright;
 }
 
-.towards__list--item:nth-child(2) .towards__list--title::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 70px;
-  height: 70px;
-  background-image: url("../images/towards/icon-2.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.towards__list--item:nth-child(3) .towards__list--title::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 70px;
-  height: 70px;
-  background-image: url("../images/towards/icon-3.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
+.towards__list--item:nth-child(1) .towards__list--title::before,
+.towards__list--item:nth-child(2) .towards__list--title::before,
+.towards__list--item:nth-child(3) .towards__list--title::before,
 .towards__list--item:nth-child(4) .towards__list--title::before {
   content: "";
   position: absolute;
@@ -93,7 +63,19 @@
   left: 0;
   width: 70px;
   height: 70px;
-  background-image: url("../images/towards/icon-4.svg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.towards__list--item:nth-child(1) .towards__list--title::before {
+  background-image: url("../images/towards/icon-1.svg");
+}
+.towards__list--item:nth-child(2) .towards__list--title::before {
+  background-image: url("../images/towards/icon-2.svg");
+}
+.towards__list--item:nth-child(3) .towards__list--title::before {
+  background-image: url("../images/towards/icon-3.svg");
+}
+.towards__list--item:nth-child(4) .towards__list--title::before {
+  background-image: url("../images/towards/icon-4.svg");
 }

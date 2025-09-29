@@ -3,12 +3,16 @@
   background-color: $text-dim;
   display: flex;
 }
+
+.footer__left {
+  margin-right: 182px;
+}
+
 .footer__title {
   font-family: $font-family;
   font-weight: 700;
   font-size: 30px;
   line-height: 120%;
-  letter-spacing: 0em;
   color: $white;
   margin-bottom: 69px;
 }
@@ -25,29 +29,6 @@
   vertical-align: middle;
 }
 
-.footer__left {
-  margin-right: 182px;
-}
-.footer__list--title {
-  margin-bottom: 50px;
-}
-.footer__right {
-  display: flex;
-}
-.footer__info-right {
-  margin-right: 82px;
-}
-.footer__info-left {
-  margin-right: 132px;
-}
-.footer__social--title {
-  font-family: $font-family;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 133%;
-  color: $white;
-  margin-bottom: 20px;
-}
 .footer__subtitle {
   font-family: $font-family;
   font-weight: 400;
@@ -56,7 +37,28 @@
   color: $white;
   margin-bottom: 20px;
 }
-.footer__list--title,
+
+.footer__right {
+  display: flex;
+}
+
+.footer__info-right {
+  margin-right: 82px;
+}
+
+.footer__info-left {
+  margin-right: 132px;
+}
+
+.footer__list--title {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: $white;
+  margin-bottom: 50px;
+}
+
 .footer__list--item {
   font-family: $font-family;
   font-weight: 600;
@@ -71,6 +73,19 @@
   gap: 20px;
 }
 
+.footer__social {
+  display: block;
+}
+
+.footer__social--title {
+  font-family: $font-family;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 133%;
+  color: $white;
+  margin-bottom: 20px;
+}
+
 .footer__list--links {
   display: flex;
   gap: 20px;
@@ -79,10 +94,11 @@
 .footer__links--item a svg {
   width: 40px;
   height: 40px;
-  transition: 0.3s;
   display: block;
-  &:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
+  transition: 0.3s;
+}
+
+.footer__links--item a svg:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
