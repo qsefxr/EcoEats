@@ -101,3 +101,40 @@
     transition: 0.3s;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 16px;
+    flex-direction: column;
+  }
+
+  .header__title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .header__list {
+    gap: 12px;
+    margin: 0 0 16px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header__list--item {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+
+  .header__buttons {
+    justify-content: center;
+    width: 100%;
+
+    .header__button {
+      width: 100px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+}
